@@ -3,8 +3,8 @@
         "pages/index/index",
         "pages/video/video",
         "pages/smallvideo/smallvideo",
-        "pages/mine/mine",
-        "pages/perform/perform"
+        "pages/perform/perform",
+        "pages/mine/mine"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -23,31 +23,31 @@
                 "pagePath": "pages/index/index",
                 "text": "电影/影院",
                 "iconPath": "Asset/movie.png",
-                "selectedIconPath": ""
+                "selectedIconPath": "Asset/movie-active.png"
             },
             {
                 "pagePath": "pages/video/video",
                 "text": "视频",
                 "iconPath": "Asset/video.png",
-                "selectedIconPath": ""
+                "selectedIconPath": "Asset/video-active.png"
             },
             {
                 "pagePath":"pages/smallvideo/smallvideo",
                 "text":"小视频",
                 "iconPath":"Asset/video-play.png",
-                "selectedIconPath":""
+                "selectedIconPath":"Asset/video-play-active.png"
             },
             {
                 "pagePath":"pages/perform/perform",
                 "text":"演出",
                 "iconPath":"Asset/show.png",
-                "selectedIconPath":""
+                "selectedIconPath":"Asset/show-active.png"
             },
             {
                 "pagePath":"pages/mine/mine",
                 "text":"我的",
-                "iconPath":"",
-                "selectedIconPath":""
+                "iconPath":"Asset/mine.png",
+                "selectedIconPath":"Asset/mine-active.png"
             }
         ]
     },

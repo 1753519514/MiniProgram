@@ -1,14 +1,55 @@
 {
     "pages": [
         "pages/index/index",
-        "pages/logs/logs",
-        "pages/main/main"
+        "pages/video/video",
+        "pages/smallvideo/smallvideo",
+        "pages/mine/mine",
+        "pages/perform/perform"
     ],
     "window": {
         "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "Weixin",
-        "navigationBarTextStyle": "black"
+        "navigationBarBackgroundColor": "#E54847",
+        "navigationBarTitleText": "猫眼电影",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#696969",
+        "selectedColor": "#E54847",
+        "backgroundColor": "#fff",
+        "position": "bottom",
+        "borderStyle": "black",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "电影/影院",
+                "iconPath": "Asset/movie.png",
+                "selectedIconPath": ""
+            },
+            {
+                "pagePath": "pages/video/video",
+                "text": "视频",
+                "iconPath": "Asset/video.png",
+                "selectedIconPath": ""
+            },
+            {
+                "pagePath":"pages/smallvideo/smallvideo",
+                "text":"小视频",
+                "iconPath":"Asset/video-play.png",
+                "selectedIconPath":""
+            },
+            {
+                "pagePath":"pages/perform/perform",
+                "text":"演出",
+                "iconPath":"Asset/show.png",
+                "selectedIconPath":""
+            },
+            {
+                "pagePath":"pages/mine/mine",
+                "text":"我的",
+                "iconPath":"",
+                "selectedIconPath":""
+            }
+        ]
     },
     "style": "v2",
     "sitemapLocation": "sitemap.json"

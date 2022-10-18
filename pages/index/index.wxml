@@ -1,13 +1,13 @@
 <view>
   <swiper class="swiper-box">
     <swiper-item>
-      <image src="../../Asset/1.jpg"></image>
+      <image src="../../asset/1.jpg"></image>
     </swiper-item>
     <swiper-item>
-      <image src="../../Asset/2.jpg"></image>
+      <image src="../../asset/2.jpg"></image>
     </swiper-item>
     <swiper-item>
-      <image src="../../Asset/3.jpg"></image>
+      <image src="../../asset/3.jpg"></image>
     </swiper-item>
   </swiper>
 </view>

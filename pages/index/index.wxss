@@ -48,13 +48,13 @@
 }
 
 .scroll-item image {
-  height: 100%;
+  max-height: 100px;
   width: 75px;
 }
 
 .film-name {
   font-size: 13px;
-  width: 85px;
+  width: 75px;
   color: #222;
   margin: 3px 0;
   white-space: nowrap;

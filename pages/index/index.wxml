@@ -1,16 +1,16 @@
 <view>
   <swiper class="swiper-box">
     <swiper-item>
-      <image src="../../asset/s1.jpg"></image>
+      <image src="../../asset/1.jpg"></image>
     </swiper-item>
     <swiper-item>
-      <image src="../../asset/s2.jpg"></image>
+      <image src="../../asset/2.jpg"></image>
     </swiper-item>
     <swiper-item>
-      <image src="../../asset/s3.jpg"></image>
+      <image src="../../asset/3.jpg"></image>
     </swiper-item>
     <swiper-item>
-      <image src="../../asset/s4.jpg"></image>
+      <image src="../../asset/4.jpg"></image>
     </swiper-item>
   </swiper>
   <view class="tab">

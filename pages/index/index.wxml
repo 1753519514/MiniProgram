@@ -10,4 +10,41 @@
       <image src="../../asset/3.jpg"></image>
     </swiper-item>
   </swiper>
+  <view class="tab">
+    <view class="{{num==1?'active':''}}" data-num="1" bindtap="changeNum">热映</view>
+    <view class="{{num==2?'active':''}}" data-num="2" bindtap="changeNum">影院</view>
+    <view class="{{num==3?'active':''}}" data-num="3" bindtap="changeNum">待映</view>
+    <view class="{{num==4?'active':''}}" data-num="4" bindtap="changeNum">经典电影</view>
+    <view class="{{num==5?'active':''}}" data-num="5" bindtap="changeNum">小剧场</view>
+  </view>
+  <view wx:if="{{num == 1}}">
+    <view class="c-a-film">
+      <text class="title">最受好评电影</text>
+      <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+        <view id="demo1" class="scroll-view-item_H demo-text-1"></view>
+        <view id="demo2" class="scroll-view-item_H demo-text-2"></view>
+        <view id="demo3" class="scroll-view-item_H demo-text-3"></view>
+      </scroll-view>
+    </view>
+  </view>
+  <view wx:elif="{{num==2}}">
+    <view class="c-a-film">
+      <text class="title">2222</text>
+    </view>
+  </view>
+  <view wx:elif="{{num==3}}">
+    <view class="c-a-film">
+      <text class="title">3333</text>
+    </view>
+  </view>
+  <view wx:elif="{{num==4}}">
+    <view class="c-a-film">
+      <text class="title">4444</text>
+    </view>
+  </view>
+  <view wx:elif="{{num==5}}">
+    <view class="c-a-film">
+      <text class="title">5555</text>
+    </view>
+  </view>
 </view>

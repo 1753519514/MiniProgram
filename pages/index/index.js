@@ -9,7 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    num: 1
   },
 
   /**
@@ -66,5 +66,12 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+
+  /**
+   * 改变数字
+   */
+  changeNum(options) {
+    this.setData({ num: options.target.dataset.num })
   }
 })

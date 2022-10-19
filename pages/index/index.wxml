@@ -21,36 +21,12 @@
     <view class="{{num==5?'active':''}}" data-num="5" bindtap="changeNum">小剧场</view>
   </view>
   <view wx:if="{{num == 1}}">
-    <view class="c-a-film">
-      <text class="title">最受好评电影</text>
-      <scroll-view class="scroll-box" scroll-x="true">
-        <view class="scroll-item">
-          <image src="../../asset/m1.jpg"></image>
-          <view class="film-name">明日战记</view>
-        </view>
-        <view class="scroll-item">
-          <image src="../../asset/m2.jpg"></image>
-          <view class="film-name">独行月球</view>
-        </view>
-        <view class="scroll-item">
-          <image src="../../asset/m3.jpg"></image>
-          <view class="film-name">搜救</view>
-        </view>
-        <view class="scroll-item">
-          <image src="../../asset/m4.jpg"></image>
-          <view class="film-name">新灰姑娘2</view>
-        </view>
-        <view class="scroll-item">
-          <image src="../../asset/m5.jpg"></image>
-          <view class="film-name">平凡英雄</view>
-        </view>
-        <view class="scroll-item">
-          <image src="../../asset/m6.jpg"></image>
-          <view class="film-name">万里归途</view>
-        </view>
-        <view class="scroll-item">
-          <image src="../../asset/m7.jpg"></image>
-          <view class="film-name">哥你好</view>
+    <view class="film">
+      <view class="title">最受好评电影</view>
+      <scroll-view class="scroll-box" scroll-x="{{true}}">
+        <view class="scroll-item" wx:for="{{list}}">
+          <image src="{{item.img}}" mode="widthFix"></image>
+          <view class="film-name">{{item.nm}}</view>
         </view>
       </scroll-view>
     </view>

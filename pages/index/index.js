@@ -9,7 +9,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    num: 1
+    num: 1,
+    list: []
   },
 
   /**
@@ -30,7 +31,15 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    let that = this
+    wx.request({
+      url: 'http://localhost:3000/data',
+      success(res) {
+        that.setData({
+          list: res.data.hot
+        })
+      }
+    })
   },
 
   /**

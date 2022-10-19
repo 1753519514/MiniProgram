@@ -1,6 +1,6 @@
 /**index.wxss**/
-swiper {
-  height: 500rpx;
+.swiper-box {
+  height: 240px;
 }
 
 .swiper-box image {
@@ -26,69 +26,33 @@ swiper {
 }
 
 .c-a-film {
-  width: 100%;
+  height: 90%;
+  width: 90%;
+  padding: 5%;
 }
 
 .title {
   color: #333;
-  font-size: 14px;
+  font-size: 16px;
 }
 
-.scroll-view_H {
+.scroll-box {
   white-space: nowrap;
-}
-
-.scroll-view-item_H {
-  display: inline-block;
   width: 100%;
-  height: 300rpx;
+  height: 150px;
 }
 
-.demo-text-1 {
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  background-color: #00ff00;
+.scroll-item {
+  display: inline-block;
+  margin-right: 10px;
 }
 
-.demo-text-1:before {
-  content: 'A';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.scroll-item image {
+  height: 100px;
+  width: 75px;
 }
 
-.demo-text-2 {
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  background-color: #0000ff;
-  color: #FFFFFF;
-  font-size: 36rpx;
-}
-
-.demo-text-2:before {
-  content: 'B';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.demo-text-3 {
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  background-color: #ff0000;
-  color: #353535;
-  font-size: 36rpx;
-}
-
-.demo-text-3:before {
-  content: 'C';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.scroll-item view {
+  color: #000000;
+  text-align: center;
 }

@@ -21,14 +21,39 @@
     <view class="{{num==5?'active':''}}" data-num="5" bindtap="changeNum">小剧场</view>
   </view>
   <view wx:if="{{num == 1}}">
-    <view class="film">
+    <view class="films">
       <view class="title">最受好评电影</view>
       <scroll-view class="scroll-box" scroll-x="{{true}}">
         <view class="scroll-item" wx:for="{{list}}">
-          <image src="{{item.img}}" mode="widthFix"></image>
+          <view class="image-box">
+            <image src="{{item.img}}" mode="widthFix"></image>
+          </view>
           <view class="film-name">{{item.nm}}</view>
         </view>
       </scroll-view>
+    </view>
+    <view class="main">
+      <view class="film-box" wx:for="{{list}}">
+        <view class="film-left">
+          <view class="image-box">
+            <image src="{{item.img}}" mode="widthFix"></image>
+          </view>
+        </view>
+        <view class="film-right">
+          <view class="r-l">
+            <view class="name">{{item.nm}}</view>
+            <view class="mark">
+              观众评：
+              <text>{{item.mk}}</text>
+            </view>
+            <view class="desc">{{item.desc}}</view>
+            <view class="showInfo">{{item.showInfo}}</view>
+          </view>
+        </view>
+        <view class="r-r">
+          <button class="buy">购票</button>
+        </view>
+      </view>
     </view>
   </view>
   <view wx:elif="{{num==2}}">

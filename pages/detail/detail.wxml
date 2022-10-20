@@ -1,0 +1,8 @@
+<view>
+  <view class="top">
+    <view class="t-l">
+      <image src="{{detail.img}}" mode="widthFix"></image>
+    </view>
+    <view class="t-r">右边</view>
+  </view>
+</view>

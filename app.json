@@ -4,7 +4,8 @@
         "pages/video/video",
         "pages/smallvideo/smallvideo",
         "pages/perform/perform",
-        "pages/mine/mine"
+        "pages/mine/mine",
+        "pages/detail/detail"
     ],
     "window": {
         "backgroundTextStyle": "light",

@@ -82,5 +82,14 @@ Page({
    */
   changeNum(options) {
     this.setData({ num: options.target.dataset.num })
-  }
+  },
+
+  /**
+   * 进入细节页面
+   */
+  toDetail() {
+    wx.navigateTo({
+      url: '/pages/detail/detail'
+    })
+  },
 })

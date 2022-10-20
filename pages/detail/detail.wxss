@@ -1,0 +1,22 @@
+/* pages/detail/detail.wxss */
+page{
+    background: #1E324A;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .top{
+    display: flex;
+  }
+  .t-l{
+    flex: 1;
+  }
+  .t-l image{
+    width: 120px;
+  }
+  
+  .t-r{
+    flex: 2;
+    background: blue;
+  }

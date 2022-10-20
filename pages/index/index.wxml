@@ -9,9 +9,6 @@
     <swiper-item>
       <image src="../../asset/3.jpg"></image>
     </swiper-item>
-    <swiper-item>
-      <image src="../../asset/4.jpg"></image>
-    </swiper-item>
   </swiper>
   <view class="tab">
     <view class="{{num==1?'active':''}}" data-num="1" bindtap="changeNum">热映</view>
@@ -33,7 +30,7 @@
       </scroll-view>
     </view>
     <view class="main">
-      <view class="film-box" wx:for="{{list}}">
+      <view class="film-box" wx:for="{{list}}" wx:key="id" bindtap="toDetail">
         <view class="film-left">
           <view class="image-box">
             <image src="{{item.img}}" mode="widthFix"></image>

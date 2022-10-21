@@ -30,6 +30,8 @@ Page({
         wx.request({
             url: 'http://localhost:3001/data',
             success(res) {
+                res.data.showTime = new Date(res.data.showTime).toLocaleDateString()
+
                 that.setData({
                     detail: res.data
                 })

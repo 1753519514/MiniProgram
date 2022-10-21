@@ -1,8 +1,81 @@
 <view>
-  <view class="top">
-    <view class="t-l">
-      <image src="{{detail.img}}" mode="widthFix"></image>
+  <view class="p10">
+    <view class="top">
+      <view class="t-l">
+        <image src="{{detail.img}}" mode="widthFix"></image>
+      </view>
+      <view class="t-r">
+        <view class="nm">{{detail.nm}}</view>
+        <view class="desc">{{detail.englishName}}</view>
+        <view class="desc">{{detail.tag}}</view>
+        <view class="desc">
+          <text wx:for="{{detail.star}}" wx:key="id">
+            {{item.name}}{{index !== detail.star.length-1 ? ' / ' : ''}}
+          </text>
+        </view>
+        <view class="desc">
+          {{detail.showTime}} {{detail.showAddress}}上映 / {{detail.duration}} 分钟
+        </view>
+        <view class="btn-box">
+          <button>想看</button>
+          <button>看过</button>
+        </view>
+      </view>
     </view>
-    <view class="t-r">右边</view>
+    <view class="film-desc">
+      <view>简介</view>
+      <view class="film-desc-content">{{detail.desc}}</view>
+    </view>
+    <view class="person">
+      <view>演职人员</view>
+      <scroll-view class="scroll-box" scroll-x="{{true}}">
+        <view class="scroll-item" wx:for="{{detail.castMembers}}" wx:key="id">
+          <view class="img-box">
+            <image src="{{item.img}}" mode="widthFix"></image>
+          </view>
+          <view class="cast-m-name">{{item.name}}</view>
+          <view class="cast-m-role">{{item.role}}</view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="person">
+      <view>视频推荐</view>
+      <scroll-view class="scroll-box" scroll-x="{{true}}">
+        <view class="scroll-item" wx:for="{{detail.videoRecommend}}" wx:key="id">
+          <view class="videoRecommend">
+            <image src="{{item.img}}" mode="widthFix"></image>
+          </view>
+        </view>
+        <view class="scroll-item" wx:for="{{detail.videoRecommend}}" wx:key="id">
+          <view class="videoRecommend">
+            <image src="{{item.img}}" mode="widthFix"></image>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="person">
+      <view>剧照</view>
+      <scroll-view class="scroll-box" scroll-x="{{true}}">
+        <view class="scroll-item" wx:for="{{detail.stagePhoto.list}}" wx:key="id">
+          <view class="videoRecommend">
+            <image src="{{item.img}}" mode="widthFix"></image>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="comment p10">
+    <view>短评</view>
+    <view class="comment-content" wx:for="{{detail.evaluate}}" wx:key="id">
+      <view>
+        {{item.name}}
+        <text class="level">Lv{{item.level}}</text>
+      </view>
+      <view class="content-main">{{item.comment}}</view>
+      <view class="footer">
+        {{item.date}}
+        <text>{{item.replyNember}} 回复</text>
+      </view>
+    </view>
   </view>
 </view>
